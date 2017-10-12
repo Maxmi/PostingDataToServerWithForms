@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    title Sending HTML forms
+    link(href='/css/style.css' rel='stylesheet' )
+  body
+    h1 Form with method set to POST
+    form(method='POST', action='/submit-form')
+    
+      label(for='artist_name') Artist Name:
+      input#artist_name.form-control(type='text', name='artist_name')
+      br
+      
+    
+      label(for='artist_country') Country:
+      input#artist_country.form-control(type='text', name='artist_country')
+      br
+    
+      button(type='submit') Submit
